@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Терминал MacOS</title>
-    <style>
-        strong {
-        font-weight: bold;
-        }
-        a {
-        background-color: transparent
-        }
-    </style>
-</head>
-<body>
-<h2>Команды для навигации и базовой работы с файлами</h2>
-<ul>
-    <li><strong>ls</strong> — покажет содержимое директории, в которой вы находитесь. Если после команды ввести адрес
-        конкретной папки, то она покажет то, что хранится в ней. При добавлении аргумента <strong>-R</strong> в выводе
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <span class="navbar-toggler-icon"></span>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Назад</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <h2 class="blue" style="color:blue">Команды для навигации и базовой работы с файлами</h2>
+    <ul style="text-align:justify;">
+      <li><strong><span style="color:blue;">ls</span></strong> — покажет содержимое директории, в которой вы находитесь. Если после команды ввести адрес
+        конкретной папки, то она покажет то, что хранится в ней. При добавлении аргумента <strong><span style="color:blue;"> — R</span></strong> в выводе
         команды появятся файлы из поддиректорий.
-    </li>
-    <li><strong>cd</strong> — change directory, что в переводе означает «сменить директорию». Из названия понятно, что с
-        помощью этой команды можно перемещаться между папками. Вписываем ее, а потом адрес: <strong>cd
-            /user/test/dir/111</strong>. Есть сокращенные варианты: <strong>cd-</strong> для перемещения в предыдущую
-        директорию или <strong>cd (без аргументов)</strong> для прыжка в домашнюю папку.
-    </li>
-    <li><strong>pwds</strong> — укажет полный путь до директории, в которой вы находитесь. Если вы перепрыгнули на
+      </li>
+      <br>
+      <li><strong><span style="color:blue;">cd</span></strong> — change directory, что в переводе означает «сменить директорию». Из названия понятно, что с
+        помощью этой команды можно перемещаться между папками. Вписываем ее, а потом адрес: <strong><span style="color:blue;">cd
+        /user/test/dir/111</span></strong>. Есть сокращенные варианты: <strong><span style="color:blue;">cd-</span></strong> для перемещения в предыдущую
+        директорию или <strong><span style="color:blue;">cd (без аргументов)</span></strong> для прыжка в домашнюю папку.
+      </li>
+      <br>
+      <li><strong><span style="color:blue;">pwds</span></strong> — укажет полный путь до директории, в которой вы находитесь. Если вы перепрыгнули на
         рабочий стол с помощью cd, то pwd покажет что-то в духе /home/Polzovatel/Desktop.
-    </li>
-    <li><strong>file</strong> — расскажет, что перед вами изображение, директория или текстовый документ, а также
+      </li>
+      <br>
+      <li><strong><span style="color:blue;">file</span></strong> — расскажет, что перед вами изображение, директория или текстовый документ, а также
         предоставит информацию о них (для изображений, например, это данные EXIF).
-    </li>
-    <li><strong>mv</strong> — mv применяется для перемещения файлов из одной папки в другую. Перенесем файл timeweb.txt
-        из домашней директории на рабочий стол: <strong>mv timeweb.txt /home/<em>имя учетной
-            записи</em>/Desktop</strong>. Эту же команду используют, чтобы поменять имя файла. Для этого надо не
+      </li>
+      <br>
+      <li><strong><span style="color:blue;">mv</span></strong> — mv применяется для перемещения файлов из одной папки в другую. Перенесем файл timeweb.txt
+        из домашней директории на рабочий стол: <strong><span style="color:blue;">mv timeweb.txt /home/<em>имя учетной
+        записи</em>/Desktop</span></strong>. Эту же команду используют, чтобы поменять имя файла. Для этого надо не
         указывать папку для перемещения, а просто ввести новое название для документа:
-    </li>
-</ul>
-<ul>
-    <li><strong>rm</strong> — опасная команда для удаления директорий и их содержимого. Затирает все данные, которые
+      </li>
+      <br>
+      <li><strong><span style="color:blue;">rm</span></strong> — опасная команда для удаления директорий и их содержимого. Затирает все данные, которые
         обнаружит в указанной папке. То есть все субдиректории и файлы будут уничтожены. И восстановить их не получится.
-        Про корзину этой команде ничего неизвестно. Синтаксис такой <strong>rm <em>путь до директории, которую нужно
-            стереть с компьютера</em></strong>. Чтобы удалить каталог&nbsp;Timeweb и все его содержимое из домашней
-        папки пользователя, введем: <strong>rm ~/Timeweb</strong>.
-    </li>
-    <li><strong>rmdir</strong> — создает новую директорию. Допустим, мы хотим создать папку под новый проект на рабочем
-        столе. Для этого введем команду: <strong>mkdir ~/Desktop/Timeweb</strong>. При желании можно разместить новую
-        папку в промежутке между двумя уже существующими. К примеру: <strong>mkdir -p
-            /home/New_Project/Newest_Project</strong> создаст папку New_Project в домашней директории и станет родителям
+        Про корзину этой команде ничего неизвестно. Синтаксис такой <strong><span style="color:blue;">rm <em>путь до директории, которую нужно
+        стереть с компьютера</em></span></strong>. Чтобы удалить каталог Timeweb и все его содержимое из домашней
+        папки пользователя, введем: <strong><span style="color:blue;">rm ~/Timeweb</span></strong>.
+      </li>
+      <br>
+      <li><strong><span style="color:blue;">rmdir</span></strong> — создает новую директорию. Допустим, мы хотим создать папку под новый проект на рабочем
+        столе. Для этого введем команду: <strong><span style="color:blue;">mkdir ~/Desktop/Timeweb</span></strong>. При желании можно разместить новую
+        папку в промежутке между двумя уже существующими. К примеру: mkdir -p
+        /home/New_Project/Newest_Project  создаст папку New_Project в домашней директории и станет родителям
         для существующей папки Newest_Project.
-    </li>
-    <li><strong>mkdir</strong> — удаляет пустую папку. Акцентируем внимание на слове «пустую». В отличие от rm, rmdir не
+      </li>
+      <br>
+      <li><strong><span style="color:blue;">mkdir</span></strong> — удаляет пустую папку. Акцентируем внимание на слове «пустую». В отличие от rm, rmdir не
         трогает другие файлы и субдиректории.
-    </li>
-    <li><strong>cat</strong> — показывает содержимое документов. Можно скормить этой утилите любой текстовый файл, и она
-        прямо в терминале отобразит все, что в нем записано. Пишем: <strong>cat <em>путь до файла, содержимое которого
-            надо осмотреть</em></strong>.
-    </li>
-</ul>
-</body>
+      </li>
+      <br>
+      <li><strong><span style="color:blue;">cat</span></strong> — показывает содержимое документов. Можно скормить этой утилите любой текстовый файл, и она
+        прямо в терминале отобразит все, что в нем записано. Пишем: <strong><span style="color:blue;">cat <em>путь до файла, содержимое которого
+        надо осмотреть</em></span></strong>.
+      </li>
+    </ul>
+  </body>
 </html>
