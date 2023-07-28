@@ -30,7 +30,7 @@
         директорию или <strong><span style="color:blue;">cd (без аргументов)</span></strong> для прыжка в домашнюю папку.
       </li>
       <br>
-      <li><strong><span style="color:blue;">pwds</span></strong> — укажет полный путь до директории, в которой вы находитесь. Если вы перепрыгнули на
+      <li><strong><span style="color:blue;">pwd</span></strong> — укажет полный путь до директории, в которой вы находитесь. Если вы перепрыгнули на
         рабочий стол с помощью cd, то pwd покажет что-то в духе /home/Polzovatel/Desktop.
       </li>
       <br>
@@ -41,7 +41,7 @@
       <li><strong><span style="color:blue;">mv</span></strong> — mv применяется для перемещения файлов из одной папки в другую. Перенесем файл timeweb.txt
         из домашней директории на рабочий стол: <strong><span style="color:blue;">mv timeweb.txt /home/<em>имя учетной
         записи</em>/Desktop</span></strong>. Эту же команду используют, чтобы поменять имя файла. Для этого надо не
-        указывать папку для перемещения, а просто ввести новое название для документа:
+        указывать папку для перемещения, а просто ввести новое название для документа: <strong><span style="color:blue;"> mv timeweb.txt timeweb-2.txt</span></strong>
       </li>
       <br>
       <li><strong><span style="color:blue;">rm</span></strong> — опасная команда для удаления директорий и их содержимого. Затирает все данные, которые
@@ -51,20 +51,28 @@
         папки пользователя, введем: <strong><span style="color:blue;">rm ~/Timeweb</span></strong>.
       </li>
       <br>
-      <li><strong><span style="color:blue;">rmdir</span></strong> — создает новую директорию. Допустим, мы хотим создать папку под новый проект на рабочем
+      <li><strong><span style="color:blue;">mkdir</span></strong> — создает новую директорию. Допустим, мы хотим создать папку под новый проект на рабочем
         столе. Для этого введем команду: <strong><span style="color:blue;">mkdir ~/Desktop/Timeweb</span></strong>. При желании можно разместить новую
-        папку в промежутке между двумя уже существующими. К примеру: mkdir -p
-        /home/New_Project/Newest_Project  создаст папку New_Project в домашней директории и станет родителям
+        папку в промежутке между двумя уже существующими. К примеру: <strong><span style="color:blue;">mkdir -p
+        /home/New_Project/Newest_Project</span></strong>  создаст папку New_Project в домашней директории и станет родителям
         для существующей папки Newest_Project.
       </li>
       <br>
-      <li><strong><span style="color:blue;">mkdir</span></strong> — удаляет пустую папку. Акцентируем внимание на слове «пустую». В отличие от rm, rmdir не
+      <li><strong><span style="color:blue;">rmdir</span></strong> — удаляет пустую папку. Акцентируем внимание на слове «пустую». В отличие от rm, rmdir не
         трогает другие файлы и субдиректории.
       </li>
       <br>
       <li><strong><span style="color:blue;">cat</span></strong> — показывает содержимое документов. Можно скормить этой утилите любой текстовый файл, и она
         прямо в терминале отобразит все, что в нем записано. Пишем: <strong><span style="color:blue;">cat <em>путь до файла, содержимое которого
         надо осмотреть</em></span></strong>.
+      </li>
+      <br>
+      <li><strong><span style="color:blue;">head</span></strong> — «голова», как и cat, показывает содержимое документов, но не всё, а только первые 10 строк. При желании количество строк можно увеличить или сократить, добавив параметр -n. Команда: 
+         <strong><span style="color:blue;">head -n 2 ~/Desktop/timeweb.txt</span></strong>покажет только первые две строчки документа timeweb.
+      <br>
+      <li><strong><span style="color:blue;">touch</span></strong> — «эта команда создавалась для изменения времени последнего открытия файла или директории, но используют ее, в основном, для создания новых файлов. Например, 
+       для создания HTML-документа в домашней директории пользователя надо ввести в терминал: 
+      <strong><span style="color:blue;">touch /home/<em>имя учетной записи/test-site.html.</m></span></strong>
       </li>
     </ul>
   </body>
