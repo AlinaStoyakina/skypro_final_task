@@ -20,21 +20,21 @@
     </nav>
      <h2 class="blue" style="color:blue">Краткий справочник по командам командной оболочки (Cmd.exe)</h2>
      <ul style="text-align:justify;">
-        <li><strong><span style="color:blue;">md (chdir)</span></strong> показывает имя текущего каталога или выполняет смену текущего каталога;</li>
+        <li><strong><span style="color:blue;">md (chdir)</span></strong>создает подкаталог в текущем или заданном каталоге;</li>
         <br>
-        <li><strong><span style="color:blue;">del</span></strong> — копирует файлы или выполняет конкатенацию файлов;</li>
+        <li><strong><span style="color:blue;">del</span></strong> — удаляет заданный файл, группу файлов или каталог;</li>
         <br>
-        <li><strong><span style="color:blue;">time</span></strong> — показывает или устанавливает текущую дату;</li>
+        <li><strong><span style="color:blue;">time</span></strong> — показывает или устанавливает системное время;</li>
         <br>
-        <li><strong><span style="color:blue;">copy (erase)</span></strong> — удаляет заданный файл, группу файлов или каталог;</li>
+        <li><strong><span style="color:blue;">copy </span></strong>  — копирует файлы или выполняет конкатенацию файлов;</li>
         <br>
         <li><strong><span style="color:blue;">dir</span></strong> — показывает список подкаталогов и файлов в текущем или заданном каталоге;</li>
         <br>
-        <li><strong><span style="color:blue;">echo</span></strong> — выводит текст в окно.</li>
+        <li><strong><span style="color:blue;">echo</span></strong> — выводит текст в окно командной строки или задает, надо ли отображать команды на экране (on|off);</li>
         <br>
         <li><strong><span style="color:blue;">exit</span></strong> — выход из оболочки командной строки;</li>
         <br>
-        <li><strong><span style="color:blue;">cd (mkdir)</span></strong> — создает подкаталог в текущем или заданном каталоге;</li>
+        <li><strong><span style="color:blue;">md (mkdir)</span></strong> — создает подкаталог в текущем или заданном каталоге;</li>
         <br>
         <li><strong><span style="color:blue;">move</span></strong> — перемещает файл или группу файлов из текущего или заданного исходного каталога в
             указанный каталог. Также может переименовывать каталог; 
@@ -45,10 +45,75 @@
         <br>
         <li><strong><span style="color:blue;">ren (rename)</span></strong> — переименовывает файл или группу файлов;</li>
         <br>
-        <li><strong><span style="color:blue;">date</span></strong> — показывает или устанавливает системное время;</li>
+        <li><strong><span style="color:blue;">date</span></strong> — показывает или устанавливает текущую дату;</li>
         <br>
-        <li><strong><span style="color:blue;">type</span></strong> — выводит на экран содержимое текстого файла.
-        </li>
+        <li><strong><span style="color:blue;">type</span></strong> — показывает содержимое текстового файла;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">assoc</span></strong> —  выводит или изменяет сопоставления <em>(associations)</em>типов файлов;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">call</span></strong> — вызывает из сценария процедуру или другой сценарий;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">cd (chdir)</span></strong> — показывает имя текущего каталога или выполняет смену текущего каталога;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">cls</span></strong> — очищает окно командной строки и буфер экрана;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">color</span></strong> — задает цвета текста и фона окна командной оболочки;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">endlocal</span></strong> — отмечает конец локализации <em>(локальной области видимости)</em> переменных;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">for</span></strong> — выполняет заданную команду для каждого файла в наборе;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">ftype</span></strong> — выводит или изменяет текущие типы файлов в сопоставлениях расширений файлов с программами; 
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">goto</span></strong> — указывает, что интерпретатор команд должен перейти на строку с заданной меткой в пакетном сценарии;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">if</span></strong> — выполняет команды по условию;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">path</span></strong> — показывает или задает путь к командам, используемый операционной системой при поиске исполняемых файлов и сценариев;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">pause</span></strong> — останавливает выполнение пакетного файла и ожидает ввода с клавиатуры;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">popd</span></strong> — делает текущим каталог, имя которого было сохранено командой PUSHD;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">prompt</span></strong> — указывает, какой текст должен показываться в строке приглашения;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">pushd</span></strong> —сохраняет имя текущего каталога и при необходимости делает текущим заданный каталог;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">set</span></strong> — показывает текущие переменные окружения или задает временные переменные для текущей командной оболочки;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">setlocal</span></strong> — отмечает начало локализации <em>(локальной области видимости)</em> переменных в пакетных сценариях; 
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">shift</span></strong> — сдвигает позицию замещаемых параметров в пакетных сценариях;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">start</span></strong> — запускает заданную программу или команду в отдельном окне;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">title</span></strong> — задает заголовок окна командной оболочки;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">verify</span></strong> —  включает режим проверки файлов после записи на диск;
+        <br>
+        <br>
+        <li><strong><span style="color:blue;">vol</span></strong> —  показывает метку и серийный номер дискового тома.      
      </ul>
   </body>
 </html>
